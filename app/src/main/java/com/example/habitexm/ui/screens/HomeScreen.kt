@@ -175,7 +175,7 @@ fun DayColumn(day: DayDisplayModel, color: Color, onDayClick: (Long, Boolean) ->
             onDayClick(day.epochDay, day.dayStatus == DayStatus.COMPLETED)
         }
     ) {
-        Text(text = day.dayName, style = MaterialTheme.typography.labelLarge)
+        Text(text = day.dayName, style = MaterialTheme.typography.labelSmall)
         Text(text = day.dayNumber, style = MaterialTheme.typography.bodyMedium)
 
         // Simple indicator for status
